@@ -1,0 +1,23 @@
+       01 100E-REGISTRO.
+          03 100E-REG                PIC X(60).
+          03 100E-REG-HDR REDEFINES 100E-REG.
+             05 FILLER               PIC X(07).
+             05 100E-NOME-ARQ        PIC X(07).
+             05 100E-AMD-ARQ         PIC 9(08).
+             05 FILLER               PIC X(33).
+             05 FILLER               PIC X(05).
+          03 100E-REG-DET REDEFINES 100E-REG.
+             05 100E-MATR            PIC 9(07).
+                88 100E-HDR          VALUE ZEROES.
+                88 100E-TRL          VALUE 9999999.
+             05 100E-NOME            PIC X(30).
+             05 100E-SEXO            PIC X(01).
+             05 100E-CPF             PIC 9(11).
+             05 100E-EST-CIVIL       PIC X(01).
+             05 FILLER               PIC X(03).
+             05 100E-CMDO            PIC 9(02).
+             05 100E-SEQ             PIC 9(05).
+          03 100E-REG-TRL REDEFINES 100E-REG.
+             05 FILLER               PIC X(07).
+             05 100E-SOMAT-SEQ       PIC 9(09).
+             05 FILLER               PIC X(44).
